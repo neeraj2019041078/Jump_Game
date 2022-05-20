@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()" onkeydown="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jump Games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading_screen">
+      <h1 class="load" id="loading">Loading 0%</h1>
+      <div class="container" id="container">
+        <h1>Dodge The Block</h1>
+        <label class="score-label">Max-Score</label>
+        <input class="score" id="mscore" value="0" />
+        <div class="nav">
+          <button class="start btn" id="start">start</button>
+          <button class="stop btn" id="stop">stop</button>
+        </div>
+
+        <div class="game">
+          <div id="character"></div>
+          <div class="block" id="block"></div>
+        </div>
+        <h2>
+          <p>Score: <span id="scoreSpan"></span></p>
+        </h2>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
